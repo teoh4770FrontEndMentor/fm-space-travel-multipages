@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style-mf.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="destination mobile-destination-bg">
+    <div class="mobile-nav overlay hidden">
+      <div class="logo js-close-btn" style="position: absolute; right: 10.4%; top: 5%; cursor: pointer;">
+        <img src="../assets/shared/icon-close.svg" alt="close">
+      </div>
+      <ul class="primary-navigation">
+        <li aria-selected="true">
+          <a href="#" class="text-white ff-sans-cond letter-spacing-2 uppercase" style="position: relative; left: 1.778rem;">
+            <span>00</span>Home
+          </a>
+        </li>
+        <li aria-selected="false">
+          <a href="#" class="text-white ff-sans-cond letter-spacing-2 uppercase" style="position: relative; left: 1.778rem;">
+            <span>01</span>Destination
+          </a>
+        </li>
+        <li aria-selected="false">
+          <a href="#" class="text-white ff-sans-cond letter-spacing-2 uppercase" style="position: relative; left: 1.778rem;">
+            <span>02</span>Crew
+          </a>
+        </li>
+        <li aria-selected="false">
+          <a href="#" class="text-white ff-sans-cond letter-spacing-2 uppercase" style="position: relative; left: 1.778rem;">
+            <span>03</span>Technology
+          </a>
+        </li>
+      </ul>
+    </div>
+    <header>
+      <nav class="flex flex-center flex-sb">
+        <div class="logo">
+          <img src="../assets/shared/logo.svg" alt="logo" />
+        </div>
+        <div class="logo burger-logo">
+          <img src="../assets/shared/icon-hamburger.svg" alt="logo" />
+        </div>
+      </nav>
+    </header>
+
+    <main class="destination-mobile">
+      <p class="numbered-title"><span>01</span>Pick your destination</p>
+
+      <div class="destination__wrapper">
+
+        <picture class="planet planet-pic-mobile">
+          <img src="../assets/destination/image-moon.webp" alt="moon">
+        </picture>
+
+        <div class="planet-info">  
+          <div>
+            <div class="flex tab-list underline-indicators">
+              <button aria-selected="true" class="uppercase text-white ff-sans-cond letter-spacing-2 text-accent">Moon</button>
+              <button aria-selected="false" class="uppercase text-white ff-sans-cond letter-spacing-2 text-accent">Mars</button>
+              <button aria-selected="false" class="uppercase text-white ff-sans-cond letter-spacing-2 text-accent">Europa</button>
+              <button aria-selected="false" class="uppercase text-white ff-sans-cond letter-spacing-2 text-accent">Titan</button>
+            </div>
+
+            <h1 class="planet-info__name uppercase fs-700 text-white ff-serif">Moon</h1>
+
+            <p class="planet-info__description text-accent ff-sans-normal" style="font-size: 15px; line-height: 1.5625rem;">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+
+            <hr style="margin: 2rem 0; border: 0; height: 1px; background-color: hsl(231 15% 26%);">
+          </div>
+
+          <div class="data-wrapper">
+
+            <div class="distance">
+              <p class="fs-200 ff-sans-cond letter-spacing-2 text-accent uppercase" style="margin-bottom: 0.75rem;">AVG. DISTANCE</p>
+              <p class="js-average-distance fs-500 ff-serif text-white uppercase">384,400 km</p>
+            </div>
+
+            <div class="travel-time">
+              <p class="fs-200 ff-sans-cond letter-spacing-2 text-accent uppercase" style="margin-bottom: 0.75rem;">Est. travel time</p>
+              <p class="js-travel-time fs-500 ff-serif text-white uppercase">3 DAYS</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
